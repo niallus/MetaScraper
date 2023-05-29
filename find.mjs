@@ -15,16 +15,12 @@ prompt.get(schema, async function (err, result) {
   if (err) {
     console.error(err);
   }
-
    await getMovie(result.position);
 });
 
 const getMovie = async (position) => {
   const data = await fs.readFile('movies.json');
   const movies = JSON.parse(data);
-
-  // console.log(movies);
-
   const movie = movies.list.find(x => x.position === `${position}.`);
   console.log(movie);
 }

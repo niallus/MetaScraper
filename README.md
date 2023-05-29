@@ -2,7 +2,7 @@
 MetaScraper - It scrapes Metacritic ordering movies by User Rating
 
 
-Needs NPM 14+
+Needs NPM 14+ (https://nodejs.org/en/download)
 
 ```run npm i```
 
